@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Lift | LAVISH</title>
+
+    <link rel="stylesheet" href="user.css">
+
+    <link rel="icon" type="image/png" href="../images/MainLogo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <img src="../images/MainLogo.png" alt="Logo">
+            <h2>LAVISH</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="user-dashboard.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="book-lift.html">
+                    <i class="fas fa-plus-circle"></i>
+                    Book Lift
+                </a>
+            </li>
+
+            <li>
+                <a href="my-bookings.html">
+                    <i class="fas fa-calendar-check"></i>
+                    My Bookings
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="top-bar">
+
+            <h1>Book a Lift</h1>
+
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <span>Welcome, Customer</span>
+            </div>
+
+        </div>
+
+        <!-- Booking Form -->
+
+        <section class="booking-container">
+
+            <div class="booking-card">
+
+                <h2>Lift Booking Form</h2>
+
+                <form>
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+                            <label>Pickup Location</label>
+                            <input type="text" placeholder="Enter pickup location">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Destination</label>
+                            <input type="text" placeholder="Enter destination">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Travel Date</label>
+                            <input type="date">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Travel Time</label>
+                            <input type="time">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Passengers</label>
+                            <input type="number" min="1" max="10" placeholder="No. of passengers">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Lift Type</label>
+
+                            <select>
+                                <option>Select Lift Type</option>
+                                <option>Standard Lift</option>
+                                <option>Premium Lift</option>
+                                <option>Luxury Lift</option>
+                                <option>Business Lift</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-group full-width">
+
+                        <label>Additional Notes</label>
+
+                        <textarea rows="4" placeholder="Enter special requirements..."></textarea>
+
+                    </div>
+
+                    <div class="booking-summary">
+
+                        <h3>Booking Summary</h3>
+
+                        <div class="summary-item">
+                            <span>Estimated Distance</span>
+                            <span>12 KM</span>
+                        </div>
+
+                        <div class="summary-item">
+                            <span>Estimated Fare</span>
+                            <span>₹250</span>
+                        </div>
+
+                        <div class="summary-item total">
+                            <span>Total Amount</span>
+                            <span>₹250</span>
+                        </div>
+
+                    </div>
+
+                    <div class="button-group">
+
+                        <button type="button" class="secondary-btn">
+                            Calculate Fare
+                        </button>
+
+                        <button type="submit" class="primary-btn">
+                            Confirm Booking
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

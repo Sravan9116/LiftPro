@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details | LAVISH</title>
+
+    <link rel="stylesheet" href="user.css">
+
+    <link rel="icon" type="image/png" href="../images/MainLogo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <img src="../images/MainLogo.png" alt="Logo">
+            <h2>LAVISH</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="user-dashboard.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="book-lift.html">
+                    <i class="fas fa-plus-circle"></i>
+                    Book Lift
+                </a>
+            </li>
+
+            <li>
+                <a href="my-bookings.html">
+                    <i class="fas fa-calendar-check"></i>
+                    My Bookings
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="booking-details.html">
+                    <i class="fas fa-file-alt"></i>
+                    Booking Details
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="top-bar">
+
+            <h1>Booking Details</h1>
+
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <span>Welcome, Customer</span>
+            </div>
+
+        </div>
+
+        <!-- Booking Information -->
+
+        <section class="details-container">
+
+            <div class="details-card">
+
+                <div class="card-header">
+                    <h2>Booking #BK2026001</h2>
+                    <span class="status completed">
+                        Completed
+                    </span>
+                </div>
+
+                <div class="details-grid">
+
+                    <!-- Customer Details -->
+
+                    <div class="info-box">
+
+                        <h3>
+                            <i class="fas fa-user"></i>
+                            Customer Details
+                        </h3>
+
+                        <p><strong>Name:</strong> Sravan Reddy</p>
+                        <p><strong>Phone:</strong> +91 9876543210</p>
+                        <p><strong>Email:</strong> sravan@gmail.com</p>
+
+                    </div>
+
+                    <!-- Trip Details -->
+
+                    <div class="info-box">
+
+                        <h3>
+                            <i class="fas fa-route"></i>
+                            Trip Details
+                        </h3>
+
+                        <p><strong>Pickup:</strong> Chennai</p>
+                        <p><strong>Destination:</strong> Coimbatore</p>
+                        <p><strong>Date:</strong> 15 June 2026</p>
+                        <p><strong>Time:</strong> 09:30 AM</p>
+
+                    </div>
+
+                    <!-- Driver Details -->
+
+                    <div class="info-box">
+
+                        <h3>
+                            <i class="fas fa-id-card"></i>
+                            Driver Details
+                        </h3>
+
+                        <p><strong>Name:</strong> Ravi Kumar</p>
+                        <p><strong>Phone:</strong> +91 9876541230</p>
+                        <p><strong>Vehicle:</strong> Premium Lift</p>
+
+                    </div>
+
+                    <!-- Payment Details -->
+
+                    <div class="info-box">
+
+                        <h3>
+                            <i class="fas fa-credit-card"></i>
+                            Payment Details
+                        </h3>
+
+                        <p><strong>Method:</strong> UPI</p>
+                        <p><strong>Transaction ID:</strong> TXN45789231</p>
+                        <p><strong>Amount:</strong> ₹250</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Timeline -->
+
+            <div class="details-card">
+
+                <h2>Booking Status Timeline</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item completed">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Booking Requested</h4>
+                            <p>15 June 2026 - 09:00 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item completed">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Booking Confirmed</h4>
+                            <p>15 June 2026 - 09:05 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item completed">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Driver Assigned</h4>
+                            <p>15 June 2026 - 09:10 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item completed">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Lift Arrived</h4>
+                            <p>15 June 2026 - 09:25 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item completed">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Trip Completed</h4>
+                            <p>15 June 2026 - 12:30 PM</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Action Buttons -->
+
+            <div class="action-buttons">
+
+                <button class="primary-btn">
+                    <i class="fas fa-download"></i>
+                    Download Invoice
+                </button>
+
+                <button class="secondary-btn">
+                    <i class="fas fa-star"></i>
+                    Rate Service
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

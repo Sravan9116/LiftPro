@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="../../css/employee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor"></div>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fa-solid fa-elevator"></i>
+            <h2>LiftPro</h2>
+            <p>Employee Panel</p>
+        </div>
+        <ul class="menu">
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+            <li>
+                <i class="fa-solid fa-list-check"></i>
+                Assigned Tasks
+            </li>
+            <li>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Repair Requests
+            </li>
+            <li>
+                <i class="fa-solid fa-building"></i>
+                Installations
+            </li>
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Maintenance
+            </li>
+            <li>
+                <i class="fa-solid fa-camera"></i>
+                Upload Images
+            </li>
+            <li>
+                <i class="fa-solid fa-file-lines"></i>
+                Daily Reports
+            </li>
+            <li>
+                <i class="fa-solid fa-chart-line"></i>
+                Performance
+            </li>
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Live Tracking
+            </li>
+            <li>
+                <i class="fa-solid fa-comments"></i>
+                Messages
+            </li>
+            <li>
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+            </li>
+            <li>
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </li>
+            <li>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </li>
+        </ul>
+    </aside>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- TOPBAR -->
+        <div class="topbar">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search Tasks...">
+            </div>
+            <div class="top-right">
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="badge">
+                        8
+                    </span>
+                </div>
+                <div class="profile">
+                    <img src="https://i.pravatar.cc/100" alt="Employee">
+                    <div>
+                        <h4>Employee</h4>
+                        <p>EMP1025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- WELCOME SECTION -->
+        <section class="welcome-card">
+            <div>
+                <h1>
+                    Welcome Back 👋
+                </h1>
+                <p>
+                    Manage your assigned lift
+                    installation, maintenance,
+                    and repair tasks.
+                </p>
+            </div>
+            <div class="attendance">
+                <h3>Attendance</h3>
+                <span class="present">
+                    Present
+                </span>
+            </div>
+        </section>
+        <!-- KPI CARDS -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <i class="fa-solid fa-list-check"></i>
+                <h3>Assigned Tasks</h3>
+                <h2>24</h2>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <h3>Completed</h3>
+                <h2>18</h2>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Pending</h3>
+                <h2>6</h2>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-star"></i>
+                <h3>Rating</h3>
+                <h2>4.9</h2>
+            </div>
+        </section>
+        <!-- PROGRESS SECTION -->
+        <section class="progress-section">
+            <div class="progress-card">
+                <h3>Repair Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill repair"></div>
+                </div>
+                <span>82%</span>
+            </div>
+            <div class="progress-card">
+                <h3>Installation Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill installation"></div>
+                </div>
+                <span>74%</span>
+            </div>
+            <div class="progress-card">
+                <h3>Maintenance Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill maintenance"></div>
+                </div>
+                <span>93%</span>
+            </div>
+        </section>
+        <!-- TASK TABLE -->
+        <section class="table-section">
+            <h2>Assigned Tasks</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Service</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CMP001</td>
+                        <td>Ravi Kumar</td>
+                        <td>Repair</td>
+                        <td>High</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>CMP002</td>
+                        <td>Arun</td>
+                        <td>Installation</td>
+                        <td>Medium</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>CMP003</td>
+                        <td>Rahul</td>
+                        <td>Maintenance</td>
+                        <td>Low</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- IMAGE UPLOAD -->
+        <section class="upload-section">
+            <h2>Upload Service Images</h2>
+            <div class="upload-grid">
+                <div class="upload-card">
+                    <h3>Before Service</h3>
+                    <label>
+                        Upload before service image
+                        <input type="file" accept=".jpg,.jpeg,.png">
+                    </label>
+                </div>
+                <div class="upload-card">
+                    <h3>After Service</h3>
+                    <label>
+                        Upload after service image
+                        <input type="file" accept=".jpg,.jpeg,.png">
+                    </label>
+                </div>
+                <div class="upload-card">
+                    <h3>Completion Proof</h3>
+                    <label>
+                        Upload completion proof image
+                        <input type="file" accept=".jpg,.jpeg,.png">
+                    </label>
+                </div>
+            </div>
+        </section>
+        <!-- DAILY REPORT -->
+        <section class="report-section">
+            <h2>Submit Daily Report</h2>
+            <form>
+                <label>
+                    Complaint ID
+                    <input type="text" placeholder="Complaint ID">
+                </label>
+                <label>
+                    Describe today's work
+                    <textarea placeholder="Describe today's work..."></textarea>
+                </label>
+                <button type="submit">
+                    Submit Report
+                </button>
+            </form>
+        </section>
+        <!-- MESSAGES -->
+        <section class="message-section">
+            <h2>Customer Messages</h2>
+            <div class="chat-box">
+                <div class="message">
+                    Customer:
+                    Lift is making unusual noise.
+                </div>
+                <div class="message reply">
+                    Employee:
+                    Technician will inspect today.
+                </div>
+            </div>
+        </section>
+        <!-- NOTIFICATIONS -->
+        <section class="notification-section">
+            <h2>Notifications</h2>
+            <div class="notification-card">
+                New Emergency Repair Request
+            </div>
+            <div class="notification-card">
+                Admin assigned new task
+            </div>
+            <div class="notification-card">
+                Customer updated complaint
+            </div>
+        </section>
+
+    </main>
+
+    <script src="../../js/employee.js"></script>
+
+</body>
+
+</html>

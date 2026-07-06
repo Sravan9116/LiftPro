@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | LAVISH</title>
+
+    <link rel="stylesheet" href="../../css/user.css">
+    <link rel="icon" type="image/png" href="../images/MainLogo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <img src="../images/MainLogo.png" alt="Logo">
+            <h2>LAVISH</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="user-dashboard.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="book-lift.html">
+                    <i class="fas fa-plus-circle"></i>
+                    Book Lift
+                </a>
+            </li>
+
+            <li>
+                <a href="my-bookings.html">
+                    <i class="fas fa-calendar-check"></i>
+                    My Bookings
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="top-bar">
+
+            <h1>My Profile</h1>
+
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <span>Welcome, Customer</span>
+            </div>
+
+        </div>
+
+        <!-- Profile Section -->
+
+        <section class="profile-container">
+
+            <!-- Profile Card -->
+
+            <div class="profile-card">
+
+                <div class="profile-header">
+
+                    <div class="profile-image">
+
+                        <img src="../images/MainLogo.png" alt="Profile Picture">
+
+                    </div>
+
+                    <div class="profile-details">
+
+                        <h2>Sravan Sri Siva Kumar Reddy</h2>
+
+                        <p>
+                            Premium Customer
+                        </p>
+
+                        <span class="member-badge">
+                            Member Since 2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Personal Information -->
+
+            <div class="profile-card">
+
+                <h2>
+                    <i class="fas fa-user"></i>
+                    Personal Information
+                </h2>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" value="Sravan Sri Siva Kumar Reddy">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" value="sravan@gmail.com">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="text" value="+91 9876543210">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Date of Birth</label>
+                        <input type="date">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Address Information -->
+
+            <div class="profile-card">
+
+                <h2>
+                    <i class="fas fa-location-dot"></i>
+                    Address Information
+                </h2>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>City</label>
+                        <input type="text" value="Nagercoil">
+                    </div>
+
+                    <div class="input-group">
+                        <label>State</label>
+                        <input type="text" value="Tamil Nadu">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Country</label>
+                        <input type="text" value="India">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Pincode</label>
+                        <input type="text" value="629001">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Account Statistics -->
+
+            <div class="stats-container">
+
+                <div class="stat-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>24</h3>
+                    <p>Total Bookings</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3>4.9</h3>
+                    <p>Customer Rating</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fas fa-route"></i>
+                    <h3>850 KM</h3>
+                    <p>Total Distance</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Gold</h3>
+                    <p>Membership</p>
+                </div>
+
+            </div>
+
+            <!-- Security Settings -->
+
+            <div class="profile-card">
+
+                <h2>
+                    <i class="fas fa-lock"></i>
+                    Security Settings
+                </h2>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>Current Password</label>
+                        <input type="password" placeholder="Enter current password">
+                    </div>
+
+                    <div class="input-group">
+                        <label>New Password</label>
+                        <input type="password" placeholder="Enter new password">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Confirm Password</label>
+                        <input type="password" placeholder="Confirm new password">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="action-buttons">
+
+                <button class="primary-btn">
+                    <i class="fas fa-save"></i>
+                    Save Changes
+                </button>
+
+                <button class="secondary-btn">
+                    <i class="fas fa-key"></i>
+                    Change Password
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

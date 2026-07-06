@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service History | LAVISH</title>
+
+    <link rel="stylesheet" href="../../css/user.css">
+    <link rel="icon" type="image/png" href="../images/MainLogo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-elevator"></i>
+
+            <h2>LAVISH</h2>
+
+            <p>Customer Portal</p>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="user-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="my-lifts.html">
+                    <i class="fa-solid fa-building"></i>
+                    My Lifts
+                </a>
+            </li>
+
+            <li>
+                <a href="register-complaint.html">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Register Complaint
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="service-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Service History
+                </a>
+            </li>
+
+            <li>
+                <a href="amc-status.html">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    AMC Status
+                </a>
+            </li>
+
+            <li>
+                <a href="track-technician.html">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Track Technician
+                </a>
+            </li>
+
+            <li>
+                <a href="invoices.html">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    Invoices
+                </a>
+            </li>
+
+            <li>
+                <a href="payments.html">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Payments
+                </a>
+            </li>
+
+            <li>
+                <a href="support-chat.html">
+                    <i class="fa-solid fa-comments"></i>
+                    Support Chat
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <div class="top-bar">
+
+            <div>
+                <h1>Service History</h1>
+                <p>Track all maintenance, repairs, and service activities.</p>
+            </div>
+
+            <button class="primary-btn">
+                <i class="fa-solid fa-download"></i>
+                Export History
+            </button>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>84</h2>
+                <p>Total Services</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h2>12</h2>
+                <p>This Year</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-user-gear"></i>
+                <h2>8</h2>
+                <p>Technicians Visited</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <h2>98%</h2>
+                <p>Resolution Rate</p>
+            </div>
+
+        </section>
+
+        <!-- Search & Filters -->
+
+        <section class="glass-card">
+
+            <div class="search-section">
+
+                <input type="text" placeholder="Search Service ID, Lift ID...">
+
+                <select>
+                    <option>All Lift Types</option>
+                    <option>Passenger Lift</option>
+                    <option>Hospital Lift</option>
+                    <option>Goods Lift</option>
+                    <option>Capsule Lift</option>
+                </select>
+
+                <select>
+                    <option>All Services</option>
+                    <option>Preventive Maintenance</option>
+                    <option>Repair Service</option>
+                    <option>Emergency Service</option>
+                    <option>Inspection</option>
+                </select>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Service Cards -->
+
+        <section class="lift-grid">
+
+            <div class="lift-card">
+
+                <div class="lift-top">
+
+                    <h2>SRV-2026-001</h2>
+
+                    <span class="status operational">
+                        Completed
+                    </span>
+
+                </div>
+
+                <div class="lift-details">
+
+                    <p><strong>Lift ID:</strong> LFT-001</p>
+                    <p><strong>Service Type:</strong> Preventive Maintenance</p>
+                    <p><strong>Technician:</strong> Ravi Kumar</p>
+                    <p><strong>Date:</strong> 10 Jun 2026</p>
+                    <p><strong>Duration:</strong> 2 Hours</p>
+                    <p><strong>Status:</strong> Successfully Completed</p>
+
+                </div>
+
+                <div class="card-actions">
+
+                    <button class="primary-btn">
+                        View Report
+                    </button>
+
+                    <button class="secondary-btn">
+                        Download PDF
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="lift-card">
+
+                <div class="lift-top">
+
+                    <h2>SRV-2026-002</h2>
+
+                    <span class="status maintenance">
+                        In Progress
+                    </span>
+
+                </div>
+
+                <div class="lift-details">
+
+                    <p><strong>Lift ID:</strong> LFT-002</p>
+                    <p><strong>Service Type:</strong> Door Repair</p>
+                    <p><strong>Technician:</strong> Arun S</p>
+                    <p><strong>Date:</strong> 15 Jun 2026</p>
+                    <p><strong>Priority:</strong> High</p>
+                    <p><strong>Status:</strong> Under Maintenance</p>
+
+                </div>
+
+                <div class="card-actions">
+
+                    <button class="primary-btn">
+                        Track Service
+                    </button>
+
+                    <button class="danger-btn">
+                        Contact Support
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Service History Table -->
+
+        <section class="glass-card">
+
+            <div class="section-header">
+                <h2>Complete Service Records</h2>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Service ID</th>
+                            <th>Lift ID</th>
+                            <th>Service Type</th>
+                            <th>Technician</th>
+                            <th>Date</th>
+                            <th>Duration</th>
+                            <th>Status</th>
+                            <th>Report</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>SRV-2026-001</td>
+                            <td>LFT-001</td>
+                            <td>Preventive Maintenance</td>
+                            <td>Ravi Kumar</td>
+                            <td>10 Jun 2026</td>
+                            <td>2 Hours</td>
+                            <td>Completed</td>
+                            <td>
+                                <button class="mini-btn">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>SRV-2026-002</td>
+                            <td>LFT-002</td>
+                            <td>Door Repair</td>
+                            <td>Arun S</td>
+                            <td>15 Jun 2026</td>
+                            <td>Ongoing</td>
+                            <td>In Progress</td>
+                            <td>
+                                <button class="mini-btn">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>SRV-2026-003</td>
+                            <td>LFT-003</td>
+                            <td>Safety Inspection</td>
+                            <td>Karthik R</td>
+                            <td>01 Jun 2026</td>
+                            <td>1 Hour</td>
+                            <td>Completed</td>
+                            <td>
+                                <button class="mini-btn">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Timeline -->
+
+        <section class="glass-card">
+
+            <h2>Recent Service Activities</h2>
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Preventive maintenance completed for Lift LFT-001.
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    Technician assigned for Lift LFT-002 repair.
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Annual safety inspection passed successfully.
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Service report generated and uploaded.
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Next maintenance visit scheduled for 25 Jun 2026.
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Performance Summary -->
+
+        <section class="glass-card">
+
+            <h2>Lift Performance Summary</h2>
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Uptime Performance: 99.2%
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-clock"></i>
+                    Average Repair Time: 3.5 Hours
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-star"></i>
+                    Customer Satisfaction Score: 4.9 / 5
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-award"></i>
+                    AMC Compliance: 100%
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

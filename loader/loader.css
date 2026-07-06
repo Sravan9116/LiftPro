@@ -1,0 +1,258 @@
+/* ==========================
+GLOBAL
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow;
+
+    background: #050816;
+
+    font-family:
+        "Segoe UI",
+        sans-serif;
+
+}
+
+/* ==========================
+PARTICLE LOADER
+========================== */
+
+#loader {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background:
+        radial-gradient(circle at center,
+            #0b1120,
+            #050816);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    z-index: 999999;
+
+    transition:
+        opacity 1.5s ease,
+        visibility 1.5s ease;
+
+}
+
+#loader.hide {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+}
+
+/* ==========================
+BACKGROUND GLOW
+========================== */
+
+.loader-bg {
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+}
+
+.loader-bg::before {
+
+    content: '';
+
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle,
+            rgba(0, 212, 255, .18),
+            transparent 70%);
+
+    filter: blur(100px);
+
+    animation:
+        glowPulse 4s infinite;
+
+}
+
+@keyframes glowPulse {
+
+    0% {
+        transform:
+            translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform:
+            translate(-50%, -50%) scale(1.2);
+    }
+
+    100% {
+        transform:
+            translate(-50%, -50%) scale(1);
+    }
+
+}
+
+/* ==========================
+PARTICLE CANVAS
+========================== */
+
+#particleCanvas {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 5;
+
+}
+
+.loader-center-glow {
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle,
+            rgba(0, 212, 255, .15),
+            rgba(125, 95, 255, .08),
+            transparent 70%);
+
+    filter: blur(80px);
+
+    animation: glowFloat 5s ease-in-out infinite;
+
+    z-index: 1;
+}
+
+@keyframes glowFloat {
+
+    0% {
+        transform:
+            translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform:
+            translate(-50%, -50%) scale(1.15);
+    }
+
+    100% {
+        transform:
+            translate(-50%, -50%) scale(1);
+    }
+}
+
+/* ==========================
+MAIN CONTENT
+========================== */
+
+#mainContent {
+
+    display: none;
+
+    width: 100%;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background: #0b1120;
+
+    color: white;
+
+}
+
+#mainContent h1 {
+
+    font-size: 4rem;
+
+    background:
+        linear-gradient(45deg,
+            #00d4ff,
+            #7d5fff);
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color:
+        transparent;
+
+}
+
+#mainContent p {
+
+    margin-top: 20px;
+
+    color: #94a3b8;
+
+    font-size: 1.2rem;
+
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:768px) {
+
+    .loader-status {
+
+        width: 90px;
+        height: 90px;
+    }
+
+    #mainContent h1 {
+
+        font-size: 2.5rem;
+    }
+
+}

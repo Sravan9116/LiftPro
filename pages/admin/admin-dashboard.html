@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCES | Admin Dashboard</title>
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="../../images/MainLogo.png">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-elevator"></i>
+
+            <h2>LAVISH</h2>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-user-tie"></i>
+                Employees
+            </li>
+
+            <li>
+                <i class="fa-solid fa-users"></i>
+                Customers
+            </li>
+
+            <li>
+                <i class="fa-solid fa-building"></i>
+                Installations
+            </li>
+
+            <li>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Repairs
+            </li>
+
+            <li>
+                <i class="fa-solid fa-file-lines"></i>
+                Reports
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-pie"></i>
+                Analytics
+            </li>
+
+            <li>
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+            <li>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-search"></i>
+
+                <input type="text" placeholder="Search Employees, Customers, Complaints...">
+
+            </div>
+
+            <div class="top-actions">
+
+                <div class="notification">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span class="badge">8</span>
+
+                </div>
+
+                <div class="profile">
+
+                    <img src="https://i.pravatar.cc/50?img=12">
+
+                    <div>
+
+                        <h4>Administrator</h4>
+
+                        <small>LiftPro Admin</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- WELCOME -->
+
+        <section class="welcome">
+
+            <h1>Welcome Back Administrator 👋</h1>
+
+            <p>
+                Manage Employees, Lift Installations,
+                Repairs, Customer Complaints and Analytics.
+            </p>
+
+        </section>
+
+        <!-- EMPLOYEE MANAGEMENT -->
+
+        <section class="employee-management">
+
+            <div class="add-employee-card">
+
+                <h2>Add Employee</h2>
+
+                <input type="text" placeholder="Employee Name">
+
+                <input type="email" placeholder="Employee Email">
+
+                <input type="text" placeholder="Designation">
+
+                <button>Add Employee</button>
+
+            </div>
+
+            <div class="approval-card">
+
+                <h2>Pending Approvals</h2>
+
+                <div class="approval-item">
+
+                    <span>Raj Kumar</span>
+
+                    <div>
+
+                        <button class="approve-btn">
+                            Approve
+                        </button>
+
+                        <button class="reject-btn">
+                            Reject
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="approval-item">
+
+                    <span>Arjun Kumar</span>
+
+                    <div>
+
+                        <button class="approve-btn">
+                            Approve
+                        </button>
+
+                        <button class="reject-btn">
+                            Reject
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- KPI CARDS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>Total Customers</h3>
+
+                <h2>1,528</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <h3>Total Employees</h3>
+
+                <h2>86</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                <h3>Active Repairs</h3>
+
+                <h2>214</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                <h3>Revenue</h3>
+
+                <h2>₹18.4L</h2>
+
+            </div>
+
+        </section>
+
+        <!-- PROGRESS -->
+
+        <section class="progress-section">
+
+            <div class="progress-card">
+
+                <h3>Service Completion</h3>
+
+                <div class="progress-bar">
+                    <div class="progress-fill service"></div>
+                </div>
+
+                <span>82%</span>
+
+            </div>
+
+            <div class="progress-card">
+
+                <h3>Employee Productivity</h3>
+
+                <div class="progress-bar">
+                    <div class="progress-fill employee"></div>
+                </div>
+
+                <span>91%</span>
+
+            </div>
+
+            <div class="progress-card">
+
+                <h3>Customer Satisfaction</h3>
+
+                <div class="progress-bar">
+                    <div class="progress-fill customer"></div>
+                </div>
+
+                <span>96%</span>
+
+            </div>
+
+        </section>
+
+        <!-- QUICK ACTIONS -->
+
+        <section class="quick-actions">
+
+            <button>
+                New Installation
+            </button>
+
+            <button>
+                New Repair
+            </button>
+
+            <button>
+                Generate Report
+            </button>
+
+            <button>
+                Export Data
+            </button>
+
+        </section>
+
+        <!-- KANBAN BOARD -->
+
+        <section class="kanban-board">
+
+            <div class="column">
+
+                <h3>Pending</h3>
+
+                <div class="ticket">
+                    Lift Door Issue
+                </div>
+
+                <div class="ticket">
+                    Sensor Failure
+                </div>
+
+            </div>
+
+            <div class="column">
+
+                <h3>In Progress</h3>
+
+                <div class="ticket">
+                    Motor Replacement
+                </div>
+
+            </div>
+
+            <div class="column">
+
+                <h3>Completed</h3>
+
+                <div class="ticket">
+                    Lift Installation
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- COMPLAINT TABLE -->
+
+        <section class="table-section">
+
+            <h2>Recent Complaints</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Issue</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>#1001</td>
+
+                        <td>John</td>
+
+                        <td>Door Jam</td>
+
+                        <td>Pending</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#1002</td>
+
+                        <td>David</td>
+
+                        <td>Sensor Failure</td>
+
+                        <td>In Progress</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- TOP EMPLOYEES -->
+
+        <section class="employee-performance">
+
+            <h2>Top Employees</h2>
+
+            <div class="employee-grid">
+
+                <div class="employee-card">
+
+                    <img src="https://i.pravatar.cc/100?img=1" alt="Raj Kumar">
+
+                    <h3>Raj Kumar</h3>
+
+                    <p>95% Efficiency</p>
+
+                </div>
+
+                <div class="employee-card">
+
+                    <img src="https://i.pravatar.cc/100?img=2" alt="Arjun">
+
+                    <h3>Arjun</h3>
+
+                    <p>91% Efficiency</p>
+
+                </div>
+
+                <div class="employee-card">
+
+                    <img src="https://i.pravatar.cc/100?img=3" alt="Suresh">
+
+                    <h3>Suresh</h3>
+
+                    <p>88% Efficiency</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../../js/admin.js"></script>
+
+</body>
+
+</html>

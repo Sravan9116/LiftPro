@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings | LAVISH</title>
+
+    <link rel="stylesheet" href="user.css">
+
+    <link rel="icon" type="image/png" href="../images/MainLogo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <img src="../images/MainLogo.png" alt="Logo">
+            <h2>LAVISH</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="user-dashboard.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="book-lift.html">
+                    <i class="fas fa-plus-circle"></i>
+                    Book Lift
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="my-bookings.html">
+                    <i class="fas fa-calendar-check"></i>
+                    My Bookings
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="top-bar">
+            <h1>My Bookings</h1>
+
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <span>Welcome, Customer</span>
+            </div>
+        </div>
+
+        <!-- Booking Stats -->
+
+        <section class="stats-container">
+
+            <div class="stat-card">
+                <i class="fas fa-calendar-check"></i>
+                <h3>24</h3>
+                <p>Total Bookings</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-clock"></i>
+                <h3>3</h3>
+                <p>Pending</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>18</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-times-circle"></i>
+                <h3>3</h3>
+                <p>Cancelled</p>
+            </div>
+
+        </section>
+
+        <!-- Booking List -->
+
+        <section class="bookings-container">
+
+            <!-- Booking Card 1 -->
+
+            <div class="booking-card">
+
+                <div class="booking-header">
+                    <h2>Booking #BK2026001</h2>
+                    <span class="status completed">
+                        Completed
+                    </span>
+                </div>
+
+                <div class="booking-info">
+
+                    <div>
+                        <strong>Pickup:</strong>
+                        Chennai
+                    </div>
+
+                    <div>
+                        <strong>Destination:</strong>
+                        Coimbatore
+                    </div>
+
+                    <div>
+                        <strong>Date:</strong>
+                        15 Jun 2026
+                    </div>
+
+                    <div>
+                        <strong>Amount:</strong>
+                        ₹250
+                    </div>
+
+                </div>
+
+                <div class="booking-actions">
+
+                    <a href="booking-details.html" class="primary-btn">
+                        View Details
+                    </a>
+
+                    <button class="secondary-btn">
+                        Download Invoice
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Booking Card 2 -->
+
+            <div class="booking-card">
+
+                <div class="booking-header">
+                    <h2>Booking #BK2026002</h2>
+                    <span class="status pending">
+                        Pending
+                    </span>
+                </div>
+
+                <div class="booking-info">
+
+                    <div>
+                        <strong>Pickup:</strong>
+                        Madurai
+                    </div>
+
+                    <div>
+                        <strong>Destination:</strong>
+                        Trichy
+                    </div>
+
+                    <div>
+                        <strong>Date:</strong>
+                        20 Jun 2026
+                    </div>
+
+                    <div>
+                        <strong>Amount:</strong>
+                        ₹180
+                    </div>
+
+                </div>
+
+                <div class="booking-actions">
+
+                    <a href="booking-details.html" class="primary-btn">
+                        View Details
+                    </a>
+
+                    <button class="danger-btn">
+                        Cancel Booking
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Booking Card 3 -->
+
+            <div class="booking-card">
+
+                <div class="booking-header">
+                    <h2>Booking #BK2026003</h2>
+                    <span class="status cancelled">
+                        Cancelled
+                    </span>
+                </div>
+
+                <div class="booking-info">
+
+                    <div>
+                        <strong>Pickup:</strong>
+                        Nagercoil
+                    </div>
+
+                    <div>
+                        <strong>Destination:</strong>
+                        Chennai
+                    </div>
+
+                    <div>
+                        <strong>Date:</strong>
+                        02 Jun 2026
+                    </div>
+
+                    <div>
+                        <strong>Amount:</strong>
+                        ₹320
+                    </div>
+
+                </div>
+
+                <div class="booking-actions">
+
+                    <a href="booking-details.html" class="primary-btn">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoices | LAVISH</title>
+
+    <link rel="stylesheet" href="../../css/user.css">
+    <link rel="icon" type="image/png" href="../images/MainLogo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-elevator"></i>
+
+            <h2>LAVISH</h2>
+
+            <p>Customer Portal</p>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="user-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="my-lifts.html">
+                    <i class="fa-solid fa-building"></i>
+                    My Lifts
+                </a>
+            </li>
+
+            <li>
+                <a href="register-complaint.html">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Register Complaint
+                </a>
+            </li>
+
+            <li>
+                <a href="service-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Service History
+                </a>
+            </li>
+
+            <li>
+                <a href="amc-status.html">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    AMC Status
+                </a>
+            </li>
+
+            <li>
+                <a href="track-technician.html">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Track Technician
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="invoices.html">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    Invoices
+                </a>
+            </li>
+
+            <li>
+                <a href="payments.html">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Payments
+                </a>
+            </li>
+
+            <li>
+                <a href="support-chat.html">
+                    <i class="fa-solid fa-comments"></i>
+                    Support Chat
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <div class="top-bar">
+
+            <div>
+                <h1>Invoices</h1>
+                <p>Manage and download all your invoices.</p>
+            </div>
+
+            <button class="primary-btn">
+                <i class="fa-solid fa-download"></i>
+                Download All
+            </button>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <i class="fa-solid fa-file-invoice"></i>
+                <h2>48</h2>
+                <p>Total Invoices</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <h2>42</h2>
+                <p>Paid Invoices</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-clock"></i>
+                <h2>6</h2>
+                <p>Pending Invoices</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <h2>₹2.8L</h2>
+                <p>Total Billing</p>
+            </div>
+
+        </section>
+
+        <!-- Search & Filter -->
+
+        <section class="glass-card">
+
+            <div class="search-section">
+
+                <input type="text" placeholder="Search Invoice Number...">
+
+                <select>
+                    <option>All Invoice Types</option>
+                    <option>AMC Invoice</option>
+                    <option>Service Invoice</option>
+                    <option>Repair Invoice</option>
+                    <option>Installation Invoice</option>
+                </select>
+
+                <select>
+                    <option>All Status</option>
+                    <option>Paid</option>
+                    <option>Pending</option>
+                    <option>Overdue</option>
+                </select>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Invoices -->
+
+        <section class="lift-grid">
+
+            <div class="lift-card">
+
+                <div class="lift-top">
+                    <h2>INV-2026-001</h2>
+                    <span class="status operational">
+                        Paid
+                    </span>
+                </div>
+
+                <div class="lift-details">
+                    <p><strong>Invoice Type:</strong> AMC Renewal</p>
+                    <p><strong>Lift ID:</strong> LFT-001</p>
+                    <p><strong>Date:</strong> 01 Jun 2026</p>
+                    <p><strong>Amount:</strong> ₹12,500</p>
+                    <p><strong>Payment Method:</strong> UPI</p>
+                </div>
+
+                <div class="card-actions">
+                    <button class="primary-btn">
+                        View Invoice
+                    </button>
+
+                    <button class="secondary-btn">
+                        Download PDF
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="lift-card">
+
+                <div class="lift-top">
+                    <h2>INV-2026-002</h2>
+                    <span class="status maintenance">
+                        Pending
+                    </span>
+                </div>
+
+                <div class="lift-details">
+                    <p><strong>Invoice Type:</strong> Repair Service</p>
+                    <p><strong>Lift ID:</strong> LFT-002</p>
+                    <p><strong>Date:</strong> 10 Jun 2026</p>
+                    <p><strong>Amount:</strong> ₹8,750</p>
+                    <p><strong>Due Date:</strong> 20 Jun 2026</p>
+                </div>
+
+                <div class="card-actions">
+                    <button class="primary-btn">
+                        Pay Now
+                    </button>
+
+                    <button class="secondary-btn">
+                        Download PDF
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Invoice Table -->
+
+        <section class="glass-card">
+
+            <div class="section-header">
+                <h2>Invoice History</h2>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Invoice No</th>
+                            <th>Type</th>
+                            <th>Lift ID</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>INV-2026-001</td>
+                            <td>AMC Renewal</td>
+                            <td>LFT-001</td>
+                            <td>01 Jun 2026</td>
+                            <td>₹12,500</td>
+                            <td>Paid</td>
+                            <td>
+                                <button class="mini-btn">
+                                    Download
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>INV-2026-002</td>
+                            <td>Repair Service</td>
+                            <td>LFT-002</td>
+                            <td>10 Jun 2026</td>
+                            <td>₹8,750</td>
+                            <td>Pending</td>
+                            <td>
+                                <button class="mini-btn">
+                                    Pay
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>INV-2026-003</td>
+                            <td>Installation</td>
+                            <td>LFT-003</td>
+                            <td>15 May 2026</td>
+                            <td>₹1,25,000</td>
+                            <td>Paid</td>
+                            <td>
+                                <button class="mini-btn">
+                                    Download
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Billing Summary -->
+
+        <section class="glass-card">
+
+            <h2>Billing Summary</h2>
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Total Paid This Year: ₹2,15,000
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-clock"></i>
+                    Outstanding Amount: ₹18,750
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Next Invoice Expected: 01 Jul 2026
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-file-contract"></i>
+                    Active AMC Contracts: 4
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

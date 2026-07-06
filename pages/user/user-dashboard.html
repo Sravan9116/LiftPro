@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LAVISH | Customer Dashboard</title>
+
+    <link rel="stylesheet" href="../../css/user.css">
+
+    <link rel="icon" type="image/png" href="../../images/MainLogo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Cursor -->
+
+    <div class="cursor"></div>
+
+    <!-- ==========================
+            SIDEBAR
+    =========================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-elevator"></i>
+
+            <h2>LAVISH</h2>
+
+            <p>Customer Portal</p>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <a href="user-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="my-lifts.html">
+                    <i class="fa-solid fa-building"></i>
+                    <span>My Lifts</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="register-complaint.html">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>Register Complaint</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="service-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Service History</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="amc-status.html">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>AMC Status</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="track-technician.html">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Track Technician</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="invoices.html">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    <span>Invoices</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="payments.html">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Payments</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="support-chat.html">
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Support Chat</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>Notifications</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="../../index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ==========================
+            MAIN CONTENT
+    =========================== -->
+
+    <main class="main-content">
+
+        <!-- ==========================
+                TOPBAR
+        =========================== -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" placeholder="Search lifts, invoices, complaints...">
+
+            </div>
+
+            <div class="top-right">
+
+                <div class="notification">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span class="badge">5</span>
+
+                </div>
+
+                <div class="profile">
+
+                    <img src="https://i.pravatar.cc/100?img=15" alt="Customer">
+
+                    <div>
+
+                        <h4>Sravan</h4>
+
+                        <p>CUST-1025</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ==========================
+                WELCOME HERO
+        =========================== -->
+
+        <section class="welcome-card">
+
+            <div>
+
+                <h1>
+
+                    Welcome Back,
+                    Sravan 👋
+
+                </h1>
+
+                <p>
+
+                    Monitor your lifts, complaints,
+                    AMC plans, invoices and technician
+                    activities from one dashboard.
+
+                </p>
+
+            </div>
+
+            <div class="status-badge">
+
+                <span class="active-amc">
+
+                    AMC ACTIVE
+
+                </span>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+                KPI CARDS
+        =========================== -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-building"></i>
+
+                <h3>Total Lifts</h3>
+
+                <h2>6</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                <h3>Service Requests</h3>
+
+                <h2>18</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <h3>Resolved</h3>
+
+                <h2>15</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                <h3>Total Payments</h3>
+
+                <h2>₹85,000</h2>
+
+            </div>
+
+        </section>
+
+        <section class="quick-actions">
+
+            <div class="quick-card" onclick="location.href='register-complaint.html'">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <h3>Register Complaint</h3>
+
+                <p>Create a new service complaint instantly.</p>
+
+            </div>
+
+            <div class="quick-card" onclick="location.href='track-technician.html'">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Track Technician</h3>
+
+                <p>View technician live status and ETA.</p>
+
+            </div>
+
+            <div class="quick-card" onclick="location.href='payments.html'">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <h3>Make Payment</h3>
+
+                <p>Pay invoices securely online.</p>
+
+            </div>
+
+            <div class="quick-card" onclick="location.href='support-chat.html'">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>Support</h3>
+
+                <p>Contact our support team anytime.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================
+                                MY LIFTS
+                        =========================== -->
+
+        <section class="lift-section">
+
+            <div class="section-header">
+
+                <h2>
+
+                    My Lift Installations
+
+                </h2>
+
+                <a href="my-lifts.html" class="primary-btn">
+
+                    View All
+
+                </a>
+
+            </div>
+
+            <div class="lift-grid">
+
+                <div class="lift-card">
+
+                    <div class="icon-box">
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </div>
+
+                    <h3>Passenger Lift</h3>
+
+                    <div class="lift-details">
+
+                        <p>
+
+                            <strong>Lift ID</strong>
+
+                            <span>LP001</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Capacity</strong>
+
+                            <span>8 Persons</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Floors</strong>
+
+                            <span>G + 5</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Status</strong>
+
+                            <span class="status operational">
+
+                                Operational
+
+                            </span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="lift-card">
+
+                    <div class="icon-box">
+
+                        <i class="fa-solid fa-hospital"></i>
+
+                    </div>
+
+                    <h3>Hospital Lift</h3>
+
+                    <div class="lift-details">
+
+                        <p>
+
+                            <strong>Lift ID</strong>
+
+                            <span>LP002</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Capacity</strong>
+
+                            <span>20 Persons</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Floors</strong>
+
+                            <span>G + 8</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Status</strong>
+
+                            <span class="status operational">
+
+                                Operational
+
+                            </span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="lift-card">
+
+                    <div class="icon-box">
+
+                        <i class="fa-solid fa-truck"></i>
+
+                    </div>
+
+                    <h3>Freight Lift</h3>
+
+                    <div class="lift-details">
+
+                        <p>
+
+                            <strong>Lift ID</strong>
+
+                            <span>LP003</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Capacity</strong>
+
+                            <span>2000 KG</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Floors</strong>
+
+                            <span>G + 2</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Status</strong>
+
+                            <span class="status maintenance">
+
+                                Maintenance Due
+
+                            </span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================
+                                RECENT COMPLAINTS
+                        =========================== -->
+
+        <section class="glass-card">
+
+            <div class="section-header">
+
+                <h2>
+
+                    Recent Complaints
+
+                </h2>
+
+                <a href="register-complaint.html" class="primary-btn">
+
+                    New Complaint
+
+                </a>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <h4>
+
+                        Lift LP003 stopped unexpectedly
+
+                    </h4>
+
+                    <p>
+
+                        Reported on 10 July 2026
+
+                    </p>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <h4>
+
+                        Door Sensor Issue
+
+                    </h4>
+
+                    <p>
+
+                        Technician Assigned
+
+                    </p>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <h4>
+
+                        Emergency Alarm Testing
+
+                    </h4>
+
+                    <p>
+
+                        Completed Successfully
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="table-section">
+
+            <div class="section-header">
+
+                <h2>
+
+                    Recent Service History
+
+                </h2>
+
+                <a href="service-history.html" class="primary-btn">
+
+                    View History
+
+                </a>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+
+                            <th>Lift ID</th>
+
+                            <th>Technician</th>
+
+                            <th>Service</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>10 Jul 2026</td>
+
+                            <td>LP001</td>
+
+                            <td>Ravi Kumar</td>
+
+                            <td>Periodic Maintenance</td>
+
+                            <td>
+
+                                <span class="status operational">
+
+                                    Completed
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>06 Jul 2026</td>
+
+                            <td>LP002</td>
+
+                            <td>Prakash</td>
+
+                            <td>Repair</td>
+
+                            <td>
+
+                                <span class="status maintenance">
+
+                                    In Progress
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>02 Jul 2026</td>
+
+                            <td>LP003</td>
+
+                            <td>Arun</td>
+
+                            <td>Inspection</td>
+
+                            <td>
+
+                                <span class="status operational">
+
+                                    Completed
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+                                QUICK ACTIONS
+                        =========================== -->
+
+        <section class="quick-actions">
+
+            <div class="quick-card" onclick="location.href='register-complaint.html'">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <h3>Register Complaint</h3>
+
+                <p>Create a new service complaint instantly.</p>
+
+            </div>
+
+            <div class="quick-card" onclick="location.href='track-technician.html'">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Track Technician</h3>
+
+                <p>View technician live status and ETA.</p>
+
+            </div>
+
+            <div class="quick-card" onclick="location.href='payments.html'">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <h3>Make Payment</h3>
+
+                <p>Pay invoices securely online.</p>
+
+            </div>
+
+            <div class="quick-card" onclick="location.href='support-chat.html'">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>Support</h3>
+
+                <p>Contact our support team anytime.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================
+                                MY LIFTS
+                        =========================== -->
+
+        <section class="lift-section">
+
+            <div class="section-header">
+
+                <h2>
+
+                    My Lift Installations
+
+                </h2>
+
+                <a href="my-lifts.html" class="primary-btn">
+
+                    View All
+
+                </a>
+
+            </div>
+
+            <div class="lift-grid">
+
+                <div class="lift-card">
+
+                    <div class="icon-box">
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </div>
+
+                    <h3>Passenger Lift</h3>
+
+                    <div class="lift-details">
+
+                        <p>
+
+                            <strong>Lift ID</strong>
+
+                            <span>LP001</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Capacity</strong>
+
+                            <span>8 Persons</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Floors</strong>
+
+                            <span>G + 5</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Status</strong>
+
+                            <span class="status operational">
+
+                                Operational
+
+                            </span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="lift-card">
+
+                    <div class="icon-box">
+
+                        <i class="fa-solid fa-hospital"></i>
+
+                    </div>
+
+                    <h3>Hospital Lift</h3>
+
+                    <div class="lift-details">
+
+                        <p>
+
+                            <strong>Lift ID</strong>
+
+                            <span>LP002</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Capacity</strong>
+
+                            <span>20 Persons</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Floors</strong>
+
+                            <span>G + 8</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Status</strong>
+
+                            <span class="status operational">
+
+                                Operational
+
+                            </span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="lift-card">
+
+                    <div class="icon-box">
+
+                        <i class="fa-solid fa-truck"></i>
+
+                    </div>
+
+                    <h3>Freight Lift</h3>
+
+                    <div class="lift-details">
+
+                        <p>
+
+                            <strong>Lift ID</strong>
+
+                            <span>LP003</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Capacity</strong>
+
+                            <span>2000 KG</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Floors</strong>
+
+                            <span>G + 2</span>
+
+                        </p>
+
+                        <p>
+
+                            <strong>Status</strong>
+
+                            <span class="status maintenance">
+
+                                Maintenance Due
+
+                            </span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================
+                                RECENT COMPLAINTS
+                        =========================== -->
+
+        <section class="glass-card">
+
+            <div class="section-header">
+
+                <h2>
+
+                    Recent Complaints
+
+                </h2>
+
+                <a href="register-complaint.html" class="primary-btn">
+
+                    New Complaint
+
+                </a>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <h4>
+
+                        Lift LP003 stopped unexpectedly
+
+                    </h4>
+
+                    <p>
+
+                        Reported on 10 July 2026
+
+                    </p>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <h4>
+
+                        Door Sensor Issue
+
+                    </h4>
+
+                    <p>
+
+                        Technician Assigned
+
+                    </p>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <h4>
+
+                        Emergency Alarm Testing
+
+                    </h4>
+
+                    <p>
+
+                        Completed Successfully
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================
+                                SERVICE HISTORY
+                        =========================== -->
+
+        <section class="table-section">
+
+            <div class="section-header">
+
+                <h2>
+
+                    Recent Service History
+
+                </h2>
+
+                <a href="service-history.html" class="primary-btn">
+
+                    View History
+
+                </a>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+
+                            <th>Lift ID</th>
+
+                            <th>Technician</th>
+
+                            <th>Service</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>10 Jul 2026</td>
+
+                            <td>LP001</td>
+
+                            <td>Ravi Kumar</td>
+
+                            <td>Periodic Maintenance</td>
+
+                            <td>
+
+                                <span class="status operational">
+
+                                    Completed
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>06 Jul 2026</td>
+
+                            <td>LP002</td>
+
+                            <td>Prakash</td>
+
+                            <td>Repair</td>
+
+                            <td>
+
+                                <span class="status maintenance">
+
+                                    In Progress
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>02 Jul 2026</td>
+
+                            <td>LP003</td>
+
+                            <td>Arun</td>
+
+                            <td>Inspection</td>
+
+                            <td>
+
+                                <span class="status operational">
+
+                                    Completed
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+                                SUPPORT CHAT
+                        =========================== -->
+
+        <section class="glass-card">
+
+            <div class="section-header">
+
+                <h2>
+                    Live Support Chat
+                </h2>
+
+                <a href="support-chat.html" class="primary-btn">
+                    Open Chat
+                </a>
+
+            </div>
+
+            <div class="chat-widget">
+
+                <div class="chat-message support">
+
+                    <img src="https://i.pravatar.cc/50?img=30" alt="Support">
+
+                    <div>
+
+                        <h4>LAVISH Support</h4>
+
+                        <p>
+                            Hello! How can we help you today?
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="chat-message customer">
+
+                    <img src="https://i.pravatar.cc/50?img=15" alt="Customer">
+
+                    <div>
+
+                        <h4>You</h4>
+
+                        <p>
+                            My lift stopped between floors.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================
+                                UPCOMING SERVICES
+                        =========================== -->
+
+        <section class="glass-card">
+
+            <div class="section-header">
+
+                <h2>
+
+                    Upcoming Service Schedule
+
+                </h2>
+
+            </div>
+
+            <div class="schedule-grid">
+
+                <div class="schedule-card">
+
+                    <h3>Passenger Lift</h3>
+
+                    <p>15 July 2026</p>
+
+                    <span class="status operational">
+                        Scheduled
+                    </span>
+
+                </div>
+
+                <div class="schedule-card">
+
+                    <h3>Hospital Lift</h3>
+
+                    <p>20 July 2026</p>
+
+                    <span class="status operational">
+                        Scheduled
+                    </span>
+
+                </div>
+
+                <div class="schedule-card">
+
+                    <h3>Freight Lift</h3>
+
+                    <p>28 July 2026</p>
+
+                    <span class="status maintenance">
+                        Pending
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================
+                                CUSTOMER FEEDBACK
+                        =========================== -->
+
+        <section class="glass-card">
+
+            <div class="section-header">
+
+                <h2>
+
+                    Customer Feedback
+
+                </h2>
+
+            </div>
+
+            <div class="feedback-grid">
+
+                <div class="feedback-card">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <p>
+
+                        Excellent installation service.
+                        Very professional technicians.
+
+                    </p>
+
+                    <h4>
+
+                        - Rajesh Kumar
+
+                    </h4>
+
+                </div>
+
+                <div class="feedback-card">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <i class="fa-regular fa-star"></i>
+
+                    <p>
+
+                        Fast complaint resolution and
+                        good customer support.
+
+                    </p>
+
+                    <h4>
+
+                        - Priya Sharma
+
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================
+                                EMERGENCY CONTACT
+                        =========================== -->
+
+        <section class="glass-card emergency-card">
+
+            <div>
+
+                <h2>
+
+                    Emergency Support
+
+                </h2>
+
+                <p>
+
+                    Need immediate assistance?
+
+                </p>
+
+            </div>
+
+            <div class="emergency-buttons">
+
+                <a href="tel:+919876543210" class="primary-btn">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    Call Now
+
+                </a>
+
+                <a href="support-chat.html" class="secondary-btn">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    Live Chat
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================
+                                FOOTER
+                        =========================== -->
+
+        <footer class="dashboard-footer">
+
+            <p>
+
+                © 2026 LAVISH Customized Elevator Solutions.
+
+                All Rights Reserved.
+
+            </p>
+
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- USER JS -->
+
+    <script src="../../js/user.js"></script>
+
+</body>
+
+</html>
