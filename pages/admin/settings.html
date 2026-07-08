@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>LCES | Settings</title>
+<link rel="stylesheet" href="../../css/admin.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<aside class="sidebar">
+<div class="logo"><i class="fa-solid fa-elevator"></i><h2>LAVISH</h2></div>
+<ul class="menu">
+<li><a href="admin-dashboard.html">Dashboard</a></li>
+<li><a href="employees.html">Employees</a></li>
+<li><a href="customers.html">Customers</a></li>
+<li><a href="notifications.html">Notifications</a></li>
+<li class="active"><a href="settings.html">Settings</a></li>
+</ul>
+</aside>
+
+<main class="main-content">
+<header class="topbar">
+<h1>System Settings</h1>
+</header>
+
+<section class="welcome">
+<h2>Company Configuration</h2>
+<p>Manage company information and application preferences.</p>
+</section>
+
+<section class="table-section">
+<form>
+<p><label>Company Name</label><br><input type="text" value="LAVISH Lift Company"></p>
+<p><label>Support Email</label><br><input type="email" value="support@lavishlifts.com"></p>
+<p><label>Support Phone</label><br><input type="text" value="+91 9876543210"></p>
+<p><label>Default Theme</label><br>
+<select>
+<option selected>Dark Blue</option>
+<option>Light</option>
+<option>Dark</option>
+</select>
+</p>
+<p><label>Enable Email Notifications</label>
+<input type="checkbox" checked></p>
+<p><button type="submit">Save Settings</button></p>
+</form>
+</section>
+</main>
+</body>
+</html>

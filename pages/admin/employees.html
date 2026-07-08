@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LCES | Employees</title>
+<link rel="stylesheet" href="../../css/admin.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" type="image/png" href="../../images/MainLogo.png">
+</head>
+<body>
+<div class="cursor"></div>
+
+<aside class="sidebar">
+    <div class="logo">
+        <i class="fa-solid fa-elevator"></i>
+        <h2>LAVISH</h2>
+        <p>Admin Panel</p>
+    </div>
+
+    <ul class="menu">
+        <li><a href="admin-dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+        <li class="active"><a href="employees.html"><i class="fa-solid fa-user-tie"></i> Employees</a></li>
+        <li><a href="customers.html"><i class="fa-solid fa-users"></i> Customers</a></li>
+        <li><a href="installations.html"><i class="fa-solid fa-building"></i> Installations</a></li>
+        <li><a href="repairs.html"><i class="fa-solid fa-screwdriver-wrench"></i> Repairs</a></li>
+        <li><a href="reports.html"><i class="fa-solid fa-file-lines"></i> Reports</a></li>
+        <li><a href="analytics.html"><i class="fa-solid fa-chart-pie"></i> Analytics</a></li>
+        <li><a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a></li>
+        <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+    </ul>
+</aside>
+
+<main class="main-content">
+
+<header class="topbar">
+<div class="search-box">
+<i class="fa-solid fa-search"></i>
+<input type="text" placeholder="Search employees...">
+</div>
+
+<div class="top-actions">
+<button class="primary-btn"><i class="fa-solid fa-user-plus"></i> Add Employee</button>
+</div>
+</header>
+
+<section class="welcome">
+<h1>Employee Management</h1>
+<p>Manage engineers, technicians and office staff.</p>
+</section>
+
+<section class="stats-grid">
+<div class="stat-card"><i class="fa-solid fa-user-tie"></i><h3>Total Employees</h3><h2>86</h2></div>
+<div class="stat-card"><i class="fa-solid fa-user-check"></i><h3>Active</h3><h2>74</h2></div>
+<div class="stat-card"><i class="fa-solid fa-user-clock"></i><h3>On Leave</h3><h2>8</h2></div>
+<div class="stat-card"><i class="fa-solid fa-user-xmark"></i><h3>Inactive</h3><h2>4</h2></div>
+</section>
+
+<section class="table-section">
+<h2>Employees</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Department</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>EMP001</td>
+<td>Raj Kumar</td>
+<td>Senior Technician</td>
+<td>raj@example.com</td>
+<td>9876543210</td>
+<td>Active</td>
+<td><button>View</button> <button>Edit</button> <button>Delete</button></td>
+</tr>
+
+<tr>
+<td>EMP002</td>
+<td>Arjun Kumar</td>
+<td>Lift Engineer</td>
+<td>arjun@example.com</td>
+<td>9123456780</td>
+<td>Active</td>
+<td><button>View</button> <button>Edit</button> <button>Delete</button></td>
+</tr>
+
+<tr>
+<td>EMP003</td>
+<td>Suresh</td>
+<td>Electrician</td>
+<td>suresh@example.com</td>
+<td>9988776655</td>
+<td>Leave</td>
+<td><button>View</button> <button>Edit</button> <button>Delete</button></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section class="quick-actions">
+<button>Add Employee</button>
+<button>Assign Task</button>
+<button>Export CSV</button>
+<button>Print</button>
+</section>
+
+</main>
+
+<script src="../../js/admin.js"></script>
+</body>
+</html>

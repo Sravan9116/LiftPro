@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LCES | Repairs</title>
+<link rel="stylesheet" href="../../css/admin.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head><body>
+<aside class="sidebar">
+<div class="logo"><i class="fa-solid fa-elevator"></i><h2>LAVISH</h2></div>
+<ul class="menu">
+<li><a href="admin-dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+<li><a href="employees.html"><i class="fa-solid fa-user-tie"></i> Employees</a></li>
+<li><a href="customers.html"><i class="fa-solid fa-users"></i> Customers</a></li>
+<li><a href="installations.html"><i class="fa-solid fa-building"></i> Installations</a></li>
+<li class="active"><a href="repairs.html"><i class="fa-solid fa-screwdriver-wrench"></i> Repairs</a></li>
+<li><a href="reports.html"><i class="fa-solid fa-file-lines"></i> Reports</a></li>
+<li><a href="analytics.html"><i class="fa-solid fa-chart-pie"></i> Analytics</a></li>
+</ul></aside>
+<main class="main-content">
+<header class="topbar"><div class="search-box"><i class="fa-solid fa-search"></i><input placeholder="Search repairs"></div>
+<button class="primary-btn"><i class="fa-solid fa-plus"></i> New Repair</button></header>
+<section class="welcome"><h1>Repair Management</h1><p>Monitor complaints and repair requests.</p></section>
+<section class="stats-grid">
+<div class="stat-card"><h3>Open Repairs</h3><h2>57</h2></div>
+<div class="stat-card"><h3>Emergency</h3><h2>9</h2></div>
+<div class="stat-card"><h3>Assigned</h3><h2>41</h2></div>
+<div class="stat-card"><h3>Completed</h3><h2>128</h2></div>
+</section>
+<section class="table-section">
+<h2>Repair Requests</h2>
+<table><thead><tr><th>ID</th><th>Customer</th><th>Issue</th><th>Priority</th><th>Technician</th><th>Status</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>REP101</td><td>John</td><td>Door Jam</td><td>High</td><td>Raj</td><td>Pending</td><td><button>Assign</button></td></tr>
+<tr><td>REP102</td><td>Rahul</td><td>Motor Fault</td><td>Medium</td><td>Arjun</td><td>Working</td><td><button>View</button></td></tr>
+<tr><td>REP103</td><td>Anita</td><td>Sensor Error</td><td>Low</td><td>Suresh</td><td>Completed</td><td><button>View</button></td></tr>
+</tbody></table>
+</section>
+</main>
+<script src="../../js/admin.js"></script>
+</body></html>
