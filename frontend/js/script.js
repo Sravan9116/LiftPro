@@ -1,87 +1,165 @@
+// ==========================
+// Custom Cursor
+// ==========================
+
 const cursor = document.querySelector(".cursor");
 
 document.addEventListener("mousemove", (e) => {
 
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
+    if (cursor) {
+
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+
+    }
 
 });
+
+
+// ==========================
+// Login Form
+// ==========================
 
 const form = document.getElementById("loginForm");
 
-form.addEventListener("submit", function(e){
+if (form) {
 
-    e.preventDefault();
+    form.addEventListener("submit", async function (e) {
 
-    const role =
-    document.getElementById("role").value;
+        e.preventDefault();
 
-    if(role === "Administrator"){
+        const email = document.getElementById("email").value.trim();
 
-        alert("Redirecting to Admin Dashboard");
+        const password = document.getElementById("password").value.trim();
 
-        window.location.href =
-        "admin-dashboard.html";
+        const role = document.getElementById("role").value;
 
-    }
+        try {
 
-    else if(role === "Employee"){
+            const response = await fetch("http://localhost:5000/api/auth/login", {
 
-        alert("Redirecting to Employee Dashboard");
+                method: "POST",
 
-        window.location.href =
-        "employee-dashboard.html";
+                headers: {
 
-    }
+                    "Content-Type": "application/json"
 
-    else{
+                },
 
-        alert("Redirecting to Customer Dashboard");
+                body: JSON.stringify({
 
-        window.location.href =
-        "user-dashboard.html";
+                    email,
 
-    }
+                    password,
 
-});
+                    role
 
-const cards =
-document.querySelectorAll(".feature-card");
+                })
+
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+
+                localStorage.setItem("token", data.token);
+
+                localStorage.setItem("user", JSON.stringify(data.user));
+
+                alert("Login Successful!");
+
+                switch (data.user.role) {
+
+                    case "Administrator":
+
+                        window.location.href = "../pages/admin/admin-dashboard.html";
+
+                        break;
+
+                    case "Employee":
+
+                        window.location.href = "../pages/employee/employee-dashboard.html";
+
+                        break;
+
+                    case "Customer":
+
+                        window.location.href = "../pages/user/user-dashboard.html";
+
+                        break;
+
+                    default:
+
+                        alert("Unknown User Role");
+
+                }
+
+            }
+
+            else {
+
+                alert(data.message);
+
+            }
+
+        }
+
+        catch (error) {
+
+            console.error(error);
+
+            alert("Unable to connect to the server.");
+
+        }
+
+    });
+
+}
+
+
+// ==========================
+// Feature Card Animation
+// ==========================
+
+const cards = document.querySelectorAll(".feature-card");
 
 cards.forEach(card => {
 
     card.addEventListener("mouseenter", () => {
 
-        card.style.transform =
-        "translateY(-8px) scale(1.03)";
+        card.style.transform = "translateY(-8px) scale(1.03)";
 
     });
 
     card.addEventListener("mouseleave", () => {
 
-        card.style.transform =
-        "translateY(0px) scale(1)";
+        card.style.transform = "translateY(0px) scale(1)";
 
     });
 
 });
 
-window.addEventListener("load",()=>{
 
-    setTimeout(()=>{
+// ==========================
+// Loader
+// ==========================
 
-        document
-        .getElementById("loader")
-        .style.opacity="0";
+window.addEventListener("load", () => {
 
-        setTimeout(()=>{
+    const loader = document.getElementById("loader");
 
-            document
-            .getElementById("loader")
-            .remove();
+    if (!loader) return;
 
-        },1000);
+    setTimeout(() => {
 
-    },5000);
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+
+            loader.remove();
+
+        }, 1000);
+
+    }, 5000);
 
 });
