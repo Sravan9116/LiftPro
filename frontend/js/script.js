@@ -15,16 +15,17 @@ document.addEventListener("mousemove", (e) => {
 
 });
 
-
+const showRegister = document.getElementById("showRegister");
+const showLogin = document.getElementById("showLogin");
+const registerForm = document.getElementById("registerForm");
 // ==========================
 // Login Form
 // ==========================
+const loginForm = document.getElementById("loginForm");
 
-const form = document.getElementById("loginForm");
+if (loginForm) {
 
-if (form) {
-
-    form.addEventListener("submit", async function (e) {
+    loginForm.addEventListener("submit", async function (e) {
 
         e.preventDefault();
 
@@ -161,5 +162,124 @@ window.addEventListener("load", () => {
         }, 1000);
 
     }, 5000);
+
+});
+
+if (showRegister) {
+
+    showRegister.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        loginForm.style.display = "none";
+        registerForm.style.display = "block";
+
+    });
+
+}
+
+if (showLogin) {
+
+    showLogin.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        registerForm.style.display = "none";
+        loginForm.style.display = "block";
+
+    });
+
+}
+
+if (registerForm) {
+
+    registerForm.addEventListener("submit", async function (e) {
+
+        e.preventDefault();
+
+        const full_name = document.getElementById("registerName").value;
+
+        const email = document.getElementById("registerEmail").value;
+
+        const phone = document.getElementById("registerPhone").value;
+
+        const password = document.getElementById("registerPassword").value;
+
+        const confirm = document.getElementById("confirmPassword").value;
+
+        if (password !== confirm) {
+
+            alert("Passwords do not match");
+
+            return;
+
+        }
+
+        try {
+
+            const response = await fetch("http://localhost:5000/api/auth/register", {
+
+                method: "POST",
+
+                headers: {
+
+                    "Content-Type": "application/json"
+
+                },
+
+                body: JSON.stringify({
+
+                    full_name,
+
+                    email,
+
+                    phone,
+
+                    password,
+
+                    role: "Customer"
+
+                })
+
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+
+                alert("Registration Successful");
+
+                registerForm.reset();
+
+                registerForm.style.display = "none";
+
+                loginForm.style.display = "block";
+
+            }
+
+            else {
+
+                alert(data.message);
+
+            }
+
+        }
+
+        catch (error) {
+
+            console.error(error);
+
+            alert("Unable to connect to the server.");
+
+        }
+
+    });
+
+}
+
+document.getElementById("googleLoginBtn").addEventListener("click", () => {
+
+    window.location.href =
+        "http://localhost:5000/api/auth/google";
 
 });

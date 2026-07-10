@@ -17,6 +17,7 @@ const serviceRoutes = require("./routes/serviceRoutes");
 const attendanceRoutes = require("./routes/attendanceRoutes");
 const notificationRoutes = require("./routes/notificationRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
+const registerRoutes = require("./routes/registerRoutes");
 
 const app = express();
 
@@ -37,7 +38,7 @@ app.use(express.urlencoded({ extended: true }));
 // ===============================
 // API Routes
 // ===============================
-
+app.use("/api/auth", registerRoutes);
 app.use("/api/auth", authRoutes);
 
 app.use("/api/admin", adminRoutes);

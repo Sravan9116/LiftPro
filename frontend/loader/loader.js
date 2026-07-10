@@ -479,6 +479,6 @@ else{
 setTimeout(() => {
 
     globalThis.location.href =
-    "pages/MainPage.html";
+    "frontend/pages/MainPage.html";
 
 }, 16000);

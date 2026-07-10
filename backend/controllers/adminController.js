@@ -15,15 +15,12 @@ exports.getDashboard = async (req, res) => {
     }
 
     catch (err) {
-
+        // Log the error for debugging/monitoring and return a useful message
+        console.error('adminController.getDashboard error:', err);
         res.status(500).json({
-
             success: false,
-
-            message: "Server Error"
-
+            message: err && err.message ? err.message : 'Server Error'
         });
-
     }
 
 };

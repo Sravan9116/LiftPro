@@ -131,10 +131,58 @@
                     </button>
 
                 </form>
+                <!-- Customer Registration Form -->
+
+                <form id="registerForm" style="display:none;">
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="registerName" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="registerEmail" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" id="registerPhone" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="registerPassword" placeholder="Password" required>
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+
+                    <button type="submit" class="login-btn">
+
+                        Register Customer
+
+                    </button>
+
+                    <div class="signup-link">
+
+                        Already have an account?
+
+                        <a href="#" id="showLogin">
+
+                            Login
+
+                        </a>
+
+                    </div>
+
+                </form>
                 <div class="divider">
                     <span>OR</span>
                 </div>
-                <button class="google-btn">
+                <button id="googleLoginBtn" class="google-btn">
                     <i class="fa-brands fa-google"></i>
                     Continue with Google
                 </button>
@@ -142,10 +190,11 @@
                     <i class="fa-brands fa-apple"></i>
                     Continue with Apple
                 </button>
+
                 <div class="signup-link">
-                    Don't have an account?
-                    <a href="#">
-                        Register
+                    Don't have a customer account?
+                    <a href="#" id="showRegister">
+                        Register as Customer
                     </a>
                 </div>
             </div>
